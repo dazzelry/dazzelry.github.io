@@ -156,6 +156,133 @@ h1 span {
     padding:14px;
 }
 
+.library-grid {
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:16px;
+}
+
+.library-item {
+    border:1px solid var(--line);
+    background:#faf8f3;
+    padding:3px;
+}
+
+.library-item a,
+.library-item a:visited,
+.library-item a:hover,
+.library-item a:active {
+    display:block;
+    padding:14px 16px;
+    color:inherit;
+    text-decoration:none;
+}
+
+.library-item a:hover {
+    background:#f3efe8;
+}
+
+.books-page {
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:20px;
+    width:100%;
+    max-width:none;
+    padding:20px;
+    grid-column:1 / -1;
+}
+
+.books-page h2 {
+    grid-column:1 / -1;
+    margin:0;
+}
+
+.projects-page {
+    padding:20px;
+}
+
+.projects-list {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    padding:16px;
+}
+
+.project-card {
+    display:block;
+    padding:18px 20px;
+    border:1px solid var(--line);
+    background:#faf8f3;
+    color:inherit;
+    text-decoration:none;
+    transition:background .15s ease;
+}
+
+.project-card:hover {
+    background:#f3efe8;
+}
+
+.project-card h2 {
+    margin:0 0 8px;
+    font-size:28px;
+    letter-spacing:-.05em;
+}
+
+.project-card p {
+    margin:0;
+}
+
+.project-detail {
+    padding:20px;
+}
+
+.project-detail img {
+    max-width:260px;
+    width:100%;
+    border:1px solid var(--line);
+    margin-bottom:18px;
+}
+
+.project-body {
+    line-height:1.7;
+}
+
+.book {
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    padding:14px;
+    border:1px solid var(--line);
+    background:#faf8f3;
+    min-height:170px;
+    width:100%;
+}
+
+.book.full-row {
+    grid-column:1 / -1;
+}
+
+.book img {
+    width:110px;
+    height:auto;
+    border:1px solid var(--line);
+    background:#f7f6f1;
+    flex-shrink:0;
+}
+
+.book.full-row img {
+    width:180px;
+}
+
+.book-copy {
+    flex:1;
+}
+
+.book-copy h3 {
+    margin-top:0;
+    margin-bottom:8px;
+}
+
 
 /* PHOTO + BIO */
 
